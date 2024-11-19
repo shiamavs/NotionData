@@ -1,4 +1,5 @@
 from notion_client import Client
+import os
 
 # Initialize the Notion client
 notion = Client(auth=os.getenv("NOTION_API_KEY"))
