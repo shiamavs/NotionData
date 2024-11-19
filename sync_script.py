@@ -1,13 +1,13 @@
 from notion_client import Client
 
 # Initialize the Notion client
-notion = Client(auth="YOUR_NOTION_API_TOKEN")
+notion = Client(auth=os.getenv("NOTION_API_KEY"))
 
 # Database IDs
-LARGER_DATABASE_ID = "YOUR_LARGER_DATABASE_ID"
+LARGER_DATABASE_ID = "132f005e7e9b80769163e36a6a083e01"
 SMALLER_DATABASE_IDS = {
-    "Team A": "YOUR_TEAM_A_DATABASE_ID",
-    "Team B": "YOUR_TEAM_B_DATABASE_ID"
+    "Keshav Ji": "140f005e7e9b810ba4c7d0c6c3db7326",
+    "Shiama Ji": "137f005e7e9b81bca296d9d70d25ad48",
 }
 
 # Fetch all items from a database
